@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Hobbies
+---
+<section class="section">
+  <h1>Hobbies</h1>
+  <p>A short list of the things I spend time on outside of work.</p>
+  <div class="grid">
+    {% for hobby in hobbies %}
+      <article class="list-card">
+        <h2><a href="/hobbies/{{ hobby.slug }}/">{{ hobby.title }}</a></h2>
+        <p>{{ hobby.summary }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

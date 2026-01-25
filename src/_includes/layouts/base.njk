@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} | Jay Jivandas</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      {% include "partials/nav.njk" %}
+      <main class="site-main">
+        {{ content | safe }}
+      </main>
+      {% include "partials/footer.njk" %}
+    </div>
+  </body>
+</html>

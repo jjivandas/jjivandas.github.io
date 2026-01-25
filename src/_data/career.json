@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "ai-ml-development-intern-spicebox",
+    "role": "AI/ML Development Intern",
+    "organization": "Spicebox.ai",
+    "dateRange": "May 2025 - Present",
+    "summary": "Contributing to the development of an AI-powered legal technology platform focused on streamlining workflows for SMEs in the UAE. Location: Dubai, UAE (Hybrid).",
+    "tags": ["AI/ML", "Legal Tech", "Software Development", "Product Design"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "undergraduate-research-assistant-icicle",
+    "role": "Undergraduate Research Assistant",
+    "organization": "NSF ICICLE AI Institute (OSU)",
+    "dateRange": "Jan 2025 - Present",
+    "summary": "Supporting applied machine learning research in ag-sensing and sustainable agriculture, including the development of ML pipelines to predict optimal nitrogen rates from multi-source data. Location: Columbus, OH (Hybrid).",
+    "tags": ["Python", "Machine Learning", "Data Analysis", "Geospatial"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "undergraduate-research-assistant-imageomics",
+    "role": "Undergraduate Research Assistant",
+    "organization": "Imageomics Institute (OSU)",
+    "dateRange": "Jul 2024 - Jan 2025",
+    "summary": "Worked on computer vision and deep learning research, evaluating and training models for biological image datasets. Location: Columbus, OH (Hybrid).",
+    "tags": ["Computer Vision", "PyTorch", "YOLO", "Python", "Deep Learning"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "application-development-intern-lifestyle-communities",
+    "role": "Application Development Intern",
+    "organization": "Lifestyle Communities",
+    "dateRange": "May 2024 - Jul 2024",
+    "summary": "Developed and maintained web and mobile applications, contributing to feature implementation, UI improvements, and code quality. Location: Columbus, OH (On-site).",
+    "tags": ["Full-Stack", "React", "React Native", "PHP", "Laravel"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "undergraduate-research-assistant-cege",
+    "role": "Undergraduate Research Assistant",
+    "organization": "Civil, Environmental & Geodetic Engineering (OSU)",
+    "dateRange": "Sep 2023 - Apr 2024",
+    "summary": "Conducted data management and analysis for ecosystem flux measurement sites, working with large environmental datasets and processing raw measurements into finalized flux calculations. Location: Columbus, OH (Hybrid).",
+    "tags": ["MATLAB", "Data Analysis", "Research", "Environmental Data"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "full-stack-web-development-intern-bmb-group",
+    "role": "Full Stack Web Development Intern",
+    "organization": "BMB Group",
+    "dateRange": "Jun 2023 - Aug 2023",
+    "summary": "Built and enhanced dynamic web applications using PHP, MySQL, and JavaScript, contributing to backend functionality, UI development, and third-party API integrations. Location: Dubai, UAE (On-site).",
+    "tags": ["PHP", "MySQL", "JavaScript", "Web Development"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "student-lead-osu-dining-services",
+    "role": "Student Lead",
+    "organization": "The Ohio State University Dining Services",
+    "dateRange": "Sep 2022 - Sep 2023",
+    "summary": "Led daily operations in a high-traffic dining environment, coordinating staff, managing shifts, and ensuring smooth service while balancing a full academic course load. Location: Columbus, OH (On-site).",
+    "tags": ["Leadership", "Operations", "Teamwork"],
+    "whatIDid": ["More details coming soon."],
+    "whatILearned": ["More details coming soon."],
+    "images": [],
+    "links": []
+  }
+]

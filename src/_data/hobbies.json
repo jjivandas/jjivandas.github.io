@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "cycling",
+    "title": "Cycling",
+    "summary": "I originally started cycling as a way to commute, and it gradually turned into a hobby that led me to documenting rides and creating videos.",
+    "details": [
+      "Started as a commute, now a consistent creative outlet.",
+      "I like documenting rides and the stories around them."
+    ],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "cooking",
+    "title": "Cooking",
+    "summary": "I enjoy experimenting in the kitchen, from meal prep to trying out new recipes and techniques.",
+    "details": [
+      "Experimenting with recipes and techniques.",
+      "Meal prep keeps me grounded during busy weeks."
+    ],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "boxing",
+    "title": "Boxing",
+    "summary": "Boxing is a major part of how I stay fit and focused, both physically and mentally.",
+    "details": [
+      "A mix of fitness, discipline, and focus.",
+      "Helps reset my energy and mindset."
+    ],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "music",
+    "title": "Music",
+    "summary": "Music is a constant for me, whether it’s something playing in the background while I work or a way to unwind and reset.",
+    "details": [
+      "Background focus while I work.",
+      "A reliable reset at the end of the day."
+    ],
+    "images": [],
+    "links": []
+  },
+  {
+    "slug": "books",
+    "title": "Books",
+    "summary": "A growing list of books I’ve read and ones I want to read in the future.",
+    "details": [
+      "Tracking what I’ve read and what’s next.",
+      "Reading helps me slow down and reflect."
+    ],
+    "images": [],
+    "links": []
+  }
+]

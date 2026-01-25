@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Timeline
+---
+<section class="section">
+  <h1>Life Timeline</h1>
+  <p>Placeholder timeline spanning career, projects, hobbies, and milestones.</p>
+  <div class="grid">
+    {% for item in timeline %}
+      <article class="timeline-item">
+        <span class="timeline-label">{{ item.label }}</span>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.startDate }}{% if item.endDate %} - {{ item.endDate }}{% endif %}</p>
+        {% if item.link %}
+          <a href="{{ item.link }}">View related page</a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>

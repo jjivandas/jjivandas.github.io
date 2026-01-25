@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Career
+---
+<section class="section">
+  <h1>Career</h1>
+  <p>Placeholder timeline of professional roles and experiences.</p>
+  <div class="grid">
+    {% for item in career %}
+      <article class="list-card">
+        <h2><a href="/career/{{ item.slug }}/">{{ item.role }}</a></h2>
+        <p><strong>{{ item.organization }}</strong> · {{ item.dateRange }}</p>
+        <p>{{ item.summary }}</p>
+        <ul class="tag-list">
+          {% for tag in item.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </div>
+</section>

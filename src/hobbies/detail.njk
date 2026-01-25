@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: hobbies
+  size: 1
+  alias: hobby
+permalink: "/hobbies/{{ hobby.slug }}/index.html"
+title: "{{ hobby.title }}"
+---
+<section class="section">
+  <a href="/hobbies/">Back to Hobbies</a>
+  <h1>{{ hobby.title }}</h1>
+  <p>{{ hobby.summary }}</p>
+</section>
+
+<section class="section">
+  <h2>Details</h2>
+  <ul>
+    {% for detail in hobby.details %}
+      <li>{{ detail }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% if hobby.images.length %}
+<section class="section">
+  <h2>Images</h2>
+  <div class="grid two">
+    {% for image in hobby.images %}
+      <img src="{{ image }}" alt="{{ hobby.title }} placeholder image">
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if hobby.links.length %}
+<section class="section">
+  <h2>Links</h2>
+  <ul>
+    {% for link in hobby.links %}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

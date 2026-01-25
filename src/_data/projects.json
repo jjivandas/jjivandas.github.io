@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "project-nimbus",
+    "title": "Project Nimbus",
+    "description": "A placeholder project about simplifying workflows.",
+    "tech": "11ty, Node.js, HTML/CSS",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/example" },
+      { "label": "Live demo", "url": "https://example.com" }
+    ],
+    "details": [
+      "What I built: a structured dashboard for tracking goals.",
+      "Why it mattered: reduced manual updates and clarified progress."
+    ],
+    "images": [
+      "/assets/images/project-nimbus-1.svg",
+      "/assets/images/project-nimbus-2.svg"
+    ]
+  },
+  {
+    "slug": "project-orbit",
+    "title": "Project Orbit",
+    "description": "An experimental data visualization concept.",
+    "tech": "D3.js, SVG, CSS",
+    "links": [],
+    "details": [
+      "Explored storytelling through interactive charts.",
+      "Focused on accessible color palettes."
+    ],
+    "images": []
+  },
+  {
+    "slug": "project-lighthouse",
+    "title": "Project Lighthouse",
+    "description": "A lightweight habit tracker prototype.",
+    "tech": "HTML, CSS, Vanilla JS",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/example" }
+    ],
+    "details": [
+      "Designed for clarity and minimal friction.",
+      "Included simple reminders and summaries."
+    ],
+    "images": [
+      "/assets/images/project-lighthouse-1.svg"
+    ]
+  }
+]
