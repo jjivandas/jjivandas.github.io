@@ -5,7 +5,8 @@ pagination:
   size: 1
   alias: item
 permalink: "/career/{{ item.slug }}/index.html"
-title: "{{ item.role }}"
+eleventyComputed:
+  title: "{{ item.role }}"
 ---
 <section class="section">
   <a href="/career/">Back to Career</a>

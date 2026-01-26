@@ -5,7 +5,8 @@ pagination:
   size: 1
   alias: hobby
 permalink: "/hobbies/{{ hobby.slug }}/index.html"
-title: "{{ hobby.title }}"
+eleventyComputed:
+  title: "{{ hobby.title }}"
 ---
 <section class="section">
   <a href="/hobbies/">Back to Hobbies</a>
