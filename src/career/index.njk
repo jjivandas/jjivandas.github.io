@@ -9,8 +9,16 @@ title: Career
     {% for item in career %}
       <article class="list-card">
         <h2><a href="/career/{{ item.slug }}/">{{ item.role }}</a></h2>
-        <p><strong>{{ item.organization }}</strong> · {{ item.dateRange }}</p>
-        <p>{{ item.summary }}</p>
+        <p><strong>{{ item.organization }}</strong> · {{ item.location }} · {{ item.dateRange }}</p>
+        {% if item.highlights and item.highlights.length %}
+          <ul>
+            {% for highlight in item.highlights %}
+              <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>{{ item.summary }}</p>
+        {% endif %}
         <ul class="tag-list">
           {% for tag in item.tags %}
             <li>{{ tag }}</li>

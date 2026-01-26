@@ -24,28 +24,28 @@
       "Cooking keeps my nutrition consistent.",
       "I rotate a few reliable weekly recipes."
     ],
-    "image": "/assets/images/hobbies/jay-cook.jpg",
+    "image": "/assets/images/hobbies/J-cooking.jpg",
     "images": [],
     "links": [],
     "recipes": [
       {
         "title": "Concoction",
-        "description": "Recipe coming soon.",
+        "description": "Indian biryani-style dish with a twist.\nRecipe coming soon.",
         "image": "/assets/images/Recipes/Concoction.jpg"
       },
       {
         "title": "One pot pasta",
-        "description": "Recipe coming soon.",
+        "description": "Easy ground turkey/beef pasta with lots of nutrients.\nRecipe coming soon.",
         "image": "/assets/images/Recipes/Pastoction.jpg"
       },
       {
         "title": "Oven trout",
-        "description": "Recipe coming soon.",
+        "description": "Healthy steelhead trout with potatoes and vegetables.\nRecipe coming soon.",
         "image": "/assets/images/Recipes/Trout.jpg"
       },
       {
         "title": "Egg avocado toast",
-        "description": "Recipe coming soon.",
+        "description": "Filling breakfast with eggs, avocado, feta, and spices.\nRecipe coming soon.",
         "image": "/assets/images/Recipes/Avocado-egg.jpg"
       }
     ]
@@ -80,13 +80,14 @@
     "title": "Books",
     "summary": "I wasn't a reader growing up, but research and investing taught me the fastest way to learn is by consuming high-quality content. Reading feels less biased than videos. I keep a list of books I've read and want to read.",
     "details": [
-      "Reading helps me learn with fewer distractions.",
-      "I track both finished books and a growing list to read.",
-      "Book I am currently Reading:\n-",
+      "Reading helps me learn with fewer distractions. I track both finished books and a growing list to read.",
+      "Book I am currently reading:",
+      "- Never Eat Alone — Keith Ferrazzi and Tahl Raz",
       "Books I have read:",
-        "Atomic Habits",
-        "11 rules for life - Chetan Bhagat",
-        "5AM club"
+      "- Atomic Habits — James Clear",
+      "- The 5AM Club — Robin Sharma",
+      "- 11 Rules for Life — Chetan Bhagat",
+      "- Percy Jackson & The Olympians (all 5 books) — Rick Riordan"
     ],
     "image": "/assets/images/hobbies/J-reading.JPG",
     "images": [],

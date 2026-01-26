@@ -10,8 +10,16 @@ title: "{{ item.role }}"
 <section class="section">
   <a href="/career/">Back to Career</a>
   <h1>{{ item.role }}</h1>
-  <p><strong>{{ item.organization }}</strong> · {{ item.dateRange }}</p>
-  <p>{{ item.summary }}</p>
+  <p><strong>{{ item.organization }}</strong> · {{ item.location }} · {{ item.dateRange }}</p>
+  {% if item.highlights and item.highlights.length %}
+    <ul>
+      {% for highlight in item.highlights %}
+        <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>{{ item.summary }}</p>
+  {% endif %}
 </section>
 
 <section class="section">

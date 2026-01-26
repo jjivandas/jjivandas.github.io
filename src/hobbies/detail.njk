@@ -17,7 +17,14 @@ title: "{{ hobby.title }}"
   <h2>Details</h2>
   <ul>
     {% for detail in hobby.details %}
-      <li>{{ detail }}</li>
+      {% set lastChar = detail.slice((detail | length) - 1) %}
+      {% if lastChar == ':' %}
+        <li class="list-heading"><strong>{{ detail }}</strong></li>
+      {% elif detail and detail.slice(0, 2) == '- ' %}
+        <li>{{ detail | replace('- ', '') }}</li>
+      {% else %}
+        <li>{{ detail }}</li>
+      {% endif %}
     {% endfor %}
   </ul>
 </section>
@@ -34,7 +41,10 @@ title: "{{ hobby.title }}"
     <div class="tab-panels">
       {% for recipe in hobby.recipes %}
         <div class="tab-panel" role="tabpanel" data-panel="recipe-{{ loop.index }}" {% if not loop.first %}hidden{% endif %}>
-          <p>{{ recipe.description }}</p>
+          {% if recipe.image %}
+            <img class="recipe-image" src="{{ recipe.image }}" alt="{{ recipe.title }} placeholder image">
+          {% endif %}
+          <p>{{ recipe.description | replace('\n', '<br>') | safe }}</p>
         </div>
       {% endfor %}
     </div>

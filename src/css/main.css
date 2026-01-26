@@ -202,6 +202,26 @@ a:hover {
   font-size: 0.8rem;
 }
 
+.tight-list {
+  padding-left: 18px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.tight-list li {
+  margin-bottom: 6px;
+}
+
+.list-heading {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.list-heading strong {
+  display: block;
+}
+
 .timeline-item {
   display: flex;
   flex-direction: column;
