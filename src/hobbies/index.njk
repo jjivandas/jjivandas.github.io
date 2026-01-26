@@ -7,9 +7,22 @@ title: Hobbies
   <p>A short list of the things I spend time on outside of work.</p>
   <div class="grid">
     {% for hobby in hobbies %}
-      <article class="list-card">
-        <h2><a href="/hobbies/{{ hobby.slug }}/">{{ hobby.title }}</a></h2>
-        <p>{{ hobby.summary }}</p>
+      <article class="list-card hobby-card">
+        {% if hobby.image %}
+          <img class="hobby-card-image" src="{{ hobby.image }}" alt="{{ hobby.title }} placeholder image">
+        {% endif %}
+        <div class="hobby-card-body">
+          <h2><a href="/hobbies/{{ hobby.slug }}/">{{ hobby.title }}</a></h2>
+          <p>{{ hobby.summary }}</p>
+          <div class="footer-links">
+            <a href="/hobbies/{{ hobby.slug }}/">View details</a>
+            {% if hobby.links and hobby.links.length %}
+              {% for link in hobby.links %}
+                <a href="{{ link.url }}">{{ link.label }}</a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
       </article>
     {% endfor %}
   </div>

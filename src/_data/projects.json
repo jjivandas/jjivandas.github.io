@@ -1,48 +1,58 @@
 [
   {
-    "slug": "project-nimbus",
-    "title": "Project Nimbus",
-    "description": "A placeholder project about simplifying workflows.",
-    "tech": "11ty, Node.js, HTML/CSS",
+    "slug": "tick-classification",
+    "title": "Tick Classification",
+    "description": "Continuing research on tick classification using BioCLIP embeddings and evaluation workflows.",
+    "tech": "Python, Scikit-learn, BioCLIP",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/example" },
-      { "label": "Live demo", "url": "https://example.com" }
+      { "label": "GitHub", "url": "https://github.com/jjivandas/tick_classification_project" }
     ],
     "details": [
-      "What I built: a structured dashboard for tracking goals.",
-      "Why it mattered: reduced manual updates and clarified progress."
-    ],
-    "images": [
-      "/assets/images/project-nimbus-1.svg",
-      "/assets/images/project-nimbus-2.svg"
-    ]
-  },
-  {
-    "slug": "project-orbit",
-    "title": "Project Orbit",
-    "description": "An experimental data visualization concept.",
-    "tech": "D3.js, SVG, CSS",
-    "links": [],
-    "details": [
-      "Explored storytelling through interactive charts.",
-      "Focused on accessible color palettes."
+      "Built on ongoing research workflows for biological image classification.",
+      "Evaluating embedding strategies for improved labeling accuracy."
     ],
     "images": []
   },
   {
-    "slug": "project-lighthouse",
-    "title": "Project Lighthouse",
-    "description": "A lightweight habit tracker prototype.",
-    "tech": "HTML, CSS, Vanilla JS",
+    "slug": "osu-engineering-org-assistant",
+    "title": "OSU Engineering Org Assistant",
+    "description": "Built a chat-based assistant using Llama API to help students find engineering orgs based on interests and queries for an OSU hackathon.",
+    "tech": "Llama API, Node.js, Prompt Engineering",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/example" }
+      { "label": "GitHub", "url": "https://github.com/jjivandas/osu_eorgs_LLM" }
     ],
     "details": [
-      "Designed for clarity and minimal friction.",
-      "Included simple reminders and summaries."
+      "Designed conversational flows to match students with organizations.",
+      "Optimized prompts for relevance and clarity."
     ],
-    "images": [
-      "/assets/images/project-lighthouse-1.svg"
-    ]
+    "images": []
+  },
+  {
+    "slug": "weather-assistant-app",
+    "title": "Weather Assistant App",
+    "description": "Developed a React Native weather assistant app with OpenWeather API, offering live forecasts, clothing tips, and daily weather-based alerts.",
+    "tech": "React Native, OpenWeather API",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/jjivandas/weather-assistant-app" }
+    ],
+    "details": [
+      "Integrated location-based data, hourly UV index, and rain notifications.",
+      "Built a responsive, mobile-friendly UI."
+    ],
+    "images": []
+  },
+  {
+    "slug": "chirper-twitter-clone",
+    "title": "Chirper (Twitter clone)",
+    "description": "Built a functional Twitter clone using PHP and Laravel with accounts and reply functionality for multiple users.",
+    "tech": "PHP, Laravel, MySQL",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/jjivandas/chirper" }
+    ],
+    "details": [
+      "Implemented multi-user accounts, posting, and replies.",
+      "Focused on core social interactions and data persistence."
+    ],
+    "images": []
   }
 ]

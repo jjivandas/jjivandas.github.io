@@ -2,55 +2,93 @@
   {
     "slug": "cycling",
     "title": "Cycling",
-    "summary": "I originally started cycling as a way to commute, and it gradually turned into a hobby that led me to documenting rides and creating videos.",
+    "summary": "I started cycling as a way to commute, and it turned into a hobby that pushed me to explore more and document rides. I also make videos, and one recently reached almost 200 views.",
     "details": [
-      "Started as a commute, now a consistent creative outlet.",
-      "I like documenting rides and the stories around them."
+      "I explore columbus with Billy (name of my bike if you didnt know)",
+      "Riding helps me explore and see new things",
+      "I enjoy recording my rides and sharing them with people.",
+      "Ive successfully uploaded 1 video on youtube check it out!"
     ],
+    "image": "/assets/images/hobbies/J-Cycle.jpg",
     "images": [],
-    "links": []
+    "links": [
+      { "label": "YouTube", "url": "https://youtube.com/@j_explores1?si=Z4jw10vKBCVAsFF0" },
+      { "label": "Strava", "url": "https://www.strava.com/athletes/USERNAME" }
+    ]
   },
   {
     "slug": "cooking",
     "title": "Cooking",
-    "summary": "I enjoy experimenting in the kitchen, from meal prep to trying out new recipes and techniques.",
+    "summary": "Staying accountable with fitness involves my food, so cooking became a core habit. I have a few recipes I make almost every week. Click through to see them.",
     "details": [
-      "Experimenting with recipes and techniques.",
-      "Meal prep keeps me grounded during busy weeks."
+      "Cooking keeps my nutrition consistent.",
+      "I rotate a few reliable weekly recipes."
     ],
+    "image": "/assets/images/hobbies/jay-cook.jpg",
     "images": [],
-    "links": []
+    "links": [],
+    "recipes": [
+      {
+        "title": "Concoction",
+        "description": "Recipe coming soon.",
+        "image": "/assets/images/Recipes/Concoction.jpg"
+      },
+      {
+        "title": "One pot pasta",
+        "description": "Recipe coming soon.",
+        "image": "/assets/images/Recipes/Pastoction.jpg"
+      },
+      {
+        "title": "Oven trout",
+        "description": "Recipe coming soon.",
+        "image": "/assets/images/Recipes/Trout.jpg"
+      },
+      {
+        "title": "Egg avocado toast",
+        "description": "Recipe coming soon.",
+        "image": "/assets/images/Recipes/Avocado-egg.jpg"
+      }
+    ]
   },
   {
     "slug": "boxing",
     "title": "Boxing",
-    "summary": "Boxing is a major part of how I stay fit and focused, both physically and mentally.",
+    "summary": "I joined the OSU Boxing Club and it's one of my main ways to stay in shape. It keeps me active with cardio and conditioning while I also lift weights weekly.",
     "details": [
-      "A mix of fitness, discipline, and focus.",
-      "Helps reset my energy and mindset."
+      "A balance of cardio, conditioning, and strength training.",
+      "Keeps me focused and disciplined."
     ],
+    "image": "/assets/images/hobbies/J-Boxing.jpg",
     "images": [],
     "links": []
   },
   {
     "slug": "music",
     "title": "Music",
-    "summary": "Music is a constant for me, whether it’s something playing in the background while I work or a way to unwind and reset.",
+    "summary": "Music is a constant for me, whether it's something playing in the background while I work or a way to unwind and reset.",
     "details": [
-      "Background focus while I work.",
-      "A reliable reset at the end of the day."
+      "Great for focus and for winding down.",
+      "Always exploring new artists and albums.",
+      "As someone who can play 3 instruments, Drums, Keyboard/Piano, Harmonica, Music is one of my biggest passions."
     ],
+    "image": "/assets/images/hobbies/J-music.jpg",
     "images": [],
     "links": []
   },
   {
     "slug": "books",
     "title": "Books",
-    "summary": "A growing list of books I’ve read and ones I want to read in the future.",
+    "summary": "I wasn't a reader growing up, but research and investing taught me the fastest way to learn is by consuming high-quality content. Reading feels less biased than videos. I keep a list of books I've read and want to read.",
     "details": [
-      "Tracking what I’ve read and what’s next.",
-      "Reading helps me slow down and reflect."
+      "Reading helps me learn with fewer distractions.",
+      "I track both finished books and a growing list to read.",
+      "Book I am currently Reading:\n-",
+      "Books I have read:",
+        "Atomic Habits",
+        "11 rules for life - Chetan Bhagat",
+        "5AM club"
     ],
+    "image": "/assets/images/hobbies/J-reading.JPG",
     "images": [],
     "links": []
   }

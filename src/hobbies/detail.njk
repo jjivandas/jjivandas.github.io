@@ -22,15 +22,44 @@ title: "{{ hobby.title }}"
   </ul>
 </section>
 
-{% if hobby.images.length %}
+{% if hobby.slug == "cooking" and hobby.recipes and hobby.recipes.length %}
 <section class="section">
-  <h2>Images</h2>
-  <div class="grid two">
-    {% for image in hobby.images %}
-      <img src="{{ image }}" alt="{{ hobby.title }} placeholder image">
-    {% endfor %}
+  <h2>Recipes</h2>
+  <div class="tabs" data-tabs="cooking">
+    <div class="tab-list" role="tablist" aria-label="Cooking recipes">
+      {% for recipe in hobby.recipes %}
+        <button class="tab-button" role="tab" type="button" aria-selected="{% if loop.first %}true{% else %}false{% endif %}" data-tab="recipe-{{ loop.index }}">{{ recipe.title }}</button>
+      {% endfor %}
+    </div>
+    <div class="tab-panels">
+      {% for recipe in hobby.recipes %}
+        <div class="tab-panel" role="tabpanel" data-panel="recipe-{{ loop.index }}" {% if not loop.first %}hidden{% endif %}>
+          <p>{{ recipe.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var container = document.querySelector('[data-tabs=\"cooking\"]');
+    if (!container) return;
+    var buttons = container.querySelectorAll('.tab-button');
+    var panels = container.querySelectorAll('.tab-panel');
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var target = button.getAttribute('data-tab');
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-selected', btn === button ? 'true' : 'false');
+        });
+        panels.forEach(function (panel) {
+          panel.hidden = panel.getAttribute('data-panel') !== target;
+        });
+      });
+    });
+  })();
+</script>
 {% endif %}
 
 {% if hobby.links.length %}
@@ -41,5 +70,11 @@ title: "{{ hobby.title }}"
       <li><a href="{{ link.url }}">{{ link.label }}</a></li>
     {% endfor %}
   </ul>
+</section>
+{% endif %}
+
+{% if hobby.image and hobby.slug != "music" %}
+<section class="section">
+  <img class="hobby-hero-image" src="{{ hobby.image }}" alt="{{ hobby.title }} placeholder image">
 </section>
 {% endif %}

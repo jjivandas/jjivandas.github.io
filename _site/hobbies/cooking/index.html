@@ -11,15 +11,13 @@
       <header class="site-header">
   <div class="brand">
     <a href="/">Jay Jivandas</a>
-    <span class="brand-tagline">Placeholder portfolio</span>
   </div>
   <nav class="site-nav">
     <a href="/">About</a>
-    <a href="/timeline/">Timeline</a>
     <a href="/career/">Career</a>
     <a href="/projects/">Projects</a>
     <a href="/hobbies/">Hobbies</a>
-    <a href="/assets/resume/Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="/assets/resume/Jay%20Jivandas%20-%20Resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="/contact/">Contact</a>
   </nav>
 </header>
@@ -28,27 +26,89 @@
         <section class="section">
   <a href="/hobbies/">Back to Hobbies</a>
   <h1>Cooking</h1>
-  <p>I enjoy experimenting in the kitchen, from meal prep to trying out new recipes and techniques.</p>
+  <p>Staying accountable with fitness involves my food, so cooking became a core habit. I have a few recipes I make almost every week. Click through to see them.</p>
 </section>
 
 <section class="section">
   <h2>Details</h2>
   <ul>
     
-      <li>Experimenting with recipes and techniques.</li>
+      <li>Cooking keeps my nutrition consistent.</li>
     
-      <li>Meal prep keeps me grounded during busy weeks.</li>
+      <li>I rotate a few reliable weekly recipes.</li>
     
   </ul>
 </section>
 
 
+<section class="section">
+  <h2>Recipes</h2>
+  <div class="tabs" data-tabs="cooking">
+    <div class="tab-list" role="tablist" aria-label="Cooking recipes">
+      
+        <button class="tab-button" role="tab" type="button" aria-selected="true" data-tab="recipe-1">Concoction</button>
+      
+        <button class="tab-button" role="tab" type="button" aria-selected="false" data-tab="recipe-2">One pot pasta</button>
+      
+        <button class="tab-button" role="tab" type="button" aria-selected="false" data-tab="recipe-3">Oven trout</button>
+      
+        <button class="tab-button" role="tab" type="button" aria-selected="false" data-tab="recipe-4">Egg avocado toast</button>
+      
+    </div>
+    <div class="tab-panels">
+      
+        <div class="tab-panel" role="tabpanel" data-panel="recipe-1" >
+          <p>Recipe coming soon.</p>
+        </div>
+      
+        <div class="tab-panel" role="tabpanel" data-panel="recipe-2" hidden>
+          <p>Recipe coming soon.</p>
+        </div>
+      
+        <div class="tab-panel" role="tabpanel" data-panel="recipe-3" hidden>
+          <p>Recipe coming soon.</p>
+        </div>
+      
+        <div class="tab-panel" role="tabpanel" data-panel="recipe-4" hidden>
+          <p>Recipe coming soon.</p>
+        </div>
+      
+    </div>
+  </div>
+</section>
 
+<script>
+  (function () {
+    var container = document.querySelector('[data-tabs=\"cooking\"]');
+    if (!container) return;
+    var buttons = container.querySelectorAll('.tab-button');
+    var panels = container.querySelectorAll('.tab-panel');
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var target = button.getAttribute('data-tab');
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-selected', btn === button ? 'true' : 'false');
+        });
+        panels.forEach(function (panel) {
+          panel.hidden = panel.getAttribute('data-panel') !== target;
+        });
+      });
+    });
+  })();
+</script>
+
+
+
+
+
+<section class="section">
+  <img class="hobby-hero-image" src="/assets/images/hobbies/jay-cook.jpg" alt="Cooking placeholder image">
+</section>
 
 
       </main>
       <footer class="site-footer">
-  <p>Placeholder footer content. Update with real details later.</p>
+  <p>Contact: <a href="mailto:jivandasjay@gmail.com">jivandasjay@gmail.com</a> · <a href="tel:+16144961234">+1 (614) 496-1234</a></p>
   <p>&copy; 2026 Jay Himanshu Jivandas</p>
 </footer>
 

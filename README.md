@@ -26,6 +26,11 @@ npm run build
 - `src/assets/resume/Resume.pdf` for the resume PDF
 - `src/assets/images/` for placeholder images
 
+### Image drops
+
+- Portrait: add `src/assets/images/portrait.jpg` (replace the placeholder reference if desired)
+- Hobby images: add files like `src/assets/images/cycling-1.jpg`, `src/assets/images/cooking-1.jpg`
+
 Index pages and detail pages are generated from the data files using Nunjucks templates.
 
 ## Deployment

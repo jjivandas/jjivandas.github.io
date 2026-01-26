@@ -1,12 +1,12 @@
 :root {
-  --bg: #f7f4ef;
+  --bg: #fbf7f4;
   --ink: #1f1f1f;
   --muted: #5a5a5a;
-  --accent: #c1121f;
-  --accent-dark: #8b0d17;
+  --accent: #d62828;
+  --accent-dark: #b61f1f;
   --card: #ffffff;
-  --border: #d8d2c6;
-  --soft: #efe6d8;
+  --border: #e3d7d2;
+  --soft: #f2e7e2;
 }
 
 * {
@@ -16,7 +16,7 @@
 body {
   margin: 0;
   font-family: "Georgia", "Times New Roman", serif;
-  background: linear-gradient(180deg, #f7f4ef 0%, #f1ebe2 60%, #ece5dc 100%);
+  background: linear-gradient(180deg, #fbf7f4 0%, #f7efe9 60%, #f2e9e2 100%);
   color: var(--ink);
   line-height: 1.6;
 }
@@ -48,19 +48,13 @@ a:hover {
 
 .brand {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
 }
 
 .brand a {
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.brand-tagline {
-  color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .site-nav {
@@ -106,10 +100,21 @@ a:hover {
   color: var(--ink);
 }
 
+.contact-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding-top: 4px;
+}
+
+.contact-block span {
+  font-size: 0.95rem;
+}
+
 .home-portrait {
   float: right;
-  width: 220px;
-  max-width: 45%;
+  width: 280px;
+  max-width: 55%;
   margin: 4px 0 12px 20px;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -130,6 +135,55 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: #fdfcf9;
+}
+
+.hobby-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.hobby-card-image {
+  width: 190px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 0;
+  background: #f7f4ef;
+}
+
+.hobby-card-body {
+  flex: 1;
+}
+
+.hobby-hero-image {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #f7f4ef;
+}
+
+.recipe-image {
+  width: 360px;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f7f4ef;
+}
+
+.hobby-gallery img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f7f4ef;
 }
 
 .tag-list {
@@ -182,6 +236,37 @@ a:hover {
   text-decoration: none;
 }
 
+.tabs {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  background: #fdfcf9;
+}
+
+.tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tab-button {
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tab-button[aria-selected="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tab-panel {
+  margin-top: 12px;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -213,5 +298,14 @@ a:hover {
     width: 100%;
     max-width: 100%;
     margin: 0 0 16px;
+  }
+
+  .hobby-card {
+    flex-direction: column;
+  }
+
+  .hobby-card-image {
+    width: 100%;
+    height: auto;
   }
 }
