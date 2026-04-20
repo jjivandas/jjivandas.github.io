@@ -1,0 +1,12 @@
+{
+  "name": "Jay Himanshu Jivandas",
+  "shortName": "Jay Jivandas",
+  "email": "jivandasjay@gmail.com",
+  "phone": "+1 (614) 496-1234",
+  "phoneRaw": "+16144961234",
+  "year": 2026,
+  "social": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jay-himanshu-jivandas-89786a238/" },
+    { "label": "GitHub", "url": "https://github.com/jjivandas" }
+  ]
+}

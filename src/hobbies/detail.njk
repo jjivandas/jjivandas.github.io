@@ -14,21 +14,20 @@ eleventyComputed:
   <p>{{ hobby.summary }}</p>
 </section>
 
+{% if hobby.slug == "books" %}
+<section class="section">
+  {{ markdownContent.books | safe }}
+</section>
+{% else %}
 <section class="section">
   <h2>Details</h2>
   <ul>
     {% for detail in hobby.details %}
-      {% set lastChar = detail.slice((detail | length) - 1) %}
-      {% if lastChar == ':' %}
-        <li class="list-heading"><strong>{{ detail }}</strong></li>
-      {% elif detail and detail.slice(0, 2) == '- ' %}
-        <li>{{ detail | replace('- ', '') }}</li>
-      {% else %}
-        <li>{{ detail }}</li>
-      {% endif %}
+      <li>{{ detail }}</li>
     {% endfor %}
   </ul>
 </section>
+{% endif %}
 
 {% if hobby.slug == "cooking" and hobby.recipes and hobby.recipes.length %}
 <section class="section">
@@ -54,7 +53,7 @@ eleventyComputed:
 
 <script>
   (function () {
-    var container = document.querySelector('[data-tabs=\"cooking\"]');
+    var container = document.querySelector('[data-tabs="cooking"]');
     if (!container) return;
     var buttons = container.querySelectorAll('.tab-button');
     var panels = container.querySelectorAll('.tab-panel');
