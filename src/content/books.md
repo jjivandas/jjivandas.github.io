@@ -2,12 +2,13 @@ Reading helps me learn with fewer distractions. I track both finished books and 
 
 ## Currently Reading
 
-- *Steve Jobs* — Walter Isaacson
+- *Sapiens* — Yuval Noah Harari
 
 ## Books I Have Read
 
 | Book | Author | Rating (X/5) |
 | --- | --- | :---: |
+| Steve Jobs | Walter Isaacson | 5 |
 | Source Code | Bill Gates | 4 |
 | Deep Work | Cal Newport | 4.5 |
 | Outwitting the Devil | Napoleon Hill | 4.5 |
