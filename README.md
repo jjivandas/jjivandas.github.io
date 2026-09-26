@@ -1,38 +1,25 @@
-# Jay Jivandas Portfolio (Placeholder)
+# Jay Jivandas — Personal Site
 
-This is a minimal Eleventy (11ty) setup for a personal portfolio and life + career blog. Content is placeholder-only and intended to be replaced over time.
+Static site built with [Eleventy (11ty)](https://www.11ty.dev/) and deployed to GitHub Pages.
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev
+npm run dev     # local server with live reload
+npm run build   # outputs to _site/ (not committed)
 ```
 
-Eleventy will serve the site locally. Output builds to `_site/`.
+## Where things live
 
-## Build
-
-```bash
-npm run build
-```
-
-## Content structure
-
-- `src/_data/career.json` for career entries
-- `src/_data/projects.json` for projects
-- `src/_data/hobbies.json` for hobbies
-- `src/_data/timeline.json` for life timeline items
-- `src/assets/resume/Resume.pdf` for the resume PDF
-- `src/assets/images/` for placeholder images
-
-### Image drops
-
-- Portrait: add `src/assets/images/portrait.jpg` (replace the placeholder reference if desired)
-- Hobby images: add files like `src/assets/images/cycling-1.jpg`, `src/assets/images/cooking-1.jpg`
-
-Index pages and detail pages are generated from the data files using Nunjucks templates.
+- `src/_data/` — site content as JSON: `site.json` (name, contact, socials), `career.json`, `projects.json`, `hobbies.json`
+- `src/content/` — longer Markdown content (`home.md`, `books.md`), loaded as `markdownContent.<name>`
+- `src/_includes/layouts/base.njk` — the page shell every page uses
+- `src/_includes/partials/` — nav and footer
+- `src/<section>/index.njk` — list pages; `src/<section>/detail.njk` — one page generated per JSON entry
+- `src/assets/resume/resume.pdf` — the resume (replace this file to update it)
+- `src/css/main.css` — all styles
 
 ## Deployment
 
-GitHub Actions builds the Eleventy site and deploys `_site/` to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`.
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and deploys `_site/` to GitHub Pages.

@@ -178,14 +178,6 @@ a:hover {
   background: #f7f4ef;
 }
 
-.hobby-gallery img {
-  width: 100%;
-  max-width: 240px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: #f7f4ef;
-}
-
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -210,33 +202,6 @@ a:hover {
 
 .tight-list li {
   margin-bottom: 6px;
-}
-
-.list-heading {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.list-heading strong {
-  display: block;
-}
-
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px;
-  border-left: 4px solid var(--accent);
-  background: #faf7f0;
-}
-
-.timeline-label {
-  display: inline-block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--muted);
 }
 
 .button-link {
