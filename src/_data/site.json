@@ -1,10 +1,19 @@
 {
   "name": "Jay Himanshu Jivandas",
   "shortName": "Jay Jivandas",
+  "url": "https://jjivandas.github.io",
+  "description": "Jay Jivandas — Computer Science & Engineering at Ohio State. Projects, research, career, and the hobbies that keep me busy.",
   "email": "jivandasjay@gmail.com",
   "phone": "+1 (614) 496-1234",
   "phoneRaw": "+16144961234",
-  "year": 2026,
+  "nav": [
+    { "label": "About", "url": "/" },
+    { "label": "Career", "url": "/career/" },
+    { "label": "Projects", "url": "/projects/" },
+    { "label": "Hobbies", "url": "/hobbies/" },
+    { "label": "Resume", "url": "/resume/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
   "social": [
     { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jay-himanshu-jivandas-89786a238/" },
     { "label": "GitHub", "url": "https://github.com/jjivandas" }

@@ -18,9 +18,13 @@ export default function (eleventyConfig) {
     return data;
   });
 
+  // Current year for the footer, computed at build time
+  eleventyConfig.addGlobalData("year", () => new Date().getFullYear());
+
   eleventyConfig.addWatchTarget("src/content/");
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
+  eleventyConfig.addPassthroughCopy({ "src/js": "js" });
 }
 
 export const config = {

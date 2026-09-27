@@ -1,10 +1,36 @@
+{%- set pageTitle = title ~ " | " ~ site.shortName if title != "Home" else site.shortName ~ " — CS & Engineering at Ohio State" -%}
+{%- set pageDescription = description or site.description -%}
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }} | Jay Jivandas</title>
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.shortName }}">
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#fbf7f4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#151312" media="(prefers-color-scheme: dark)">
+
+    <script>
+      // Apply a saved theme before first paint so the page never flashes the wrong colors.
+      try {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/site.js" defer></script>
   </head>
   <body>
     <div class="site-wrapper">
