@@ -1,6 +1,5 @@
 /* Colors: every color on the site comes from these variables.
-   Light is the default; dark applies when the visitor's system is dark
-   (unless they picked light with the toggle) or when they picked dark. */
+   Light is the default; dark applies only when the visitor picks it with the toggle. */
 :root {
   --bg: #fbf7f4;
   --bg-mid: #f7efe9;
@@ -18,27 +17,6 @@
   --shadow: 0 8px 20px rgba(31, 31, 31, 0.05);
   --shadow-hover: 0 12px 28px rgba(31, 31, 31, 0.1);
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #151312;
-    --bg-mid: #181514;
-    --bg-end: #1c1816;
-    --ink: #f1ebe6;
-    --muted: #a8a09a;
-    --accent: #ff6b6b;
-    --accent-dark: #ff8a8a;
-    --on-accent: #1a0f0f;
-    --card: #1f1c1a;
-    --card-alt: #252120;
-    --img-bg: #2a2523;
-    --border: #3a3330;
-    --soft: #2f2926;
-    --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-    --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.5);
-    color-scheme: dark;
-  }
 }
 
 :root[data-theme="dark"] {
@@ -175,16 +153,6 @@ a:hover {
 
 :root[data-theme="dark"] .theme-icon-dark {
   display: inline;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-icon-light {
-    display: none;
-  }
-
-  :root:not([data-theme="light"]) .theme-icon-dark {
-    display: inline;
-  }
 }
 
 .site-main {
